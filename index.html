@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Prakash Bandapalli</div>
+        <div class="menuHolder">
+            <div class="myBtn"><i class="fas fa-times close-btn"></i></div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="myBtn"> <i class="fas fa-bars menu-btn"></i></div>
+    </header>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/my-pic.jpg" alt="Profile pic">
+        </div>
+        <div class="section__text">
+            <div class="section__text__p1">Hello, I'm</div>
+            <h1 class="tile">Prakash Bandapalli</h1>
+            <span id="element"></span>
+            <div class="button-container">
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/prakash-bandapalli-2593b5259/'">
+                <img src="./assets/github.png" alt="githubprofile" class="icon"
+                    onclick="location.href='https://github.com/Prakash-Bandapalli'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About ME</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about pic.jpg" alt="about pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>No Experience yet</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Pursuing B.Tech<br />At CMR Technical Campus</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Prakash Bandapalli, a 19-year-old web development enthusiast hailing from vibrant Hyderabad,
+                        Telangana. Currently pursuing B.Tech at CMR Technical Campus, I'm deeply passionate about
+                        coding and thrive on exploring the ever-evolving world of web development. I find joy in staying
+                        up-to-date with the latest trends and believe in creating user-friendly web experiences. Check
+                        out my portfolio to see my innovative front-end web projects, and let's connect for potential
+                        collaborations!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <div id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="container">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="assets/dice.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Dice Game</h3>
+                        <p>Roll the dice 🎲 and feel the thrill of the game as the winner is revealed with every reload.
+                        </p>
+                        <div class="icons">
+                            <button onclick="location.href='https://github.com/Prakash-Bandapalli/dice-game'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Github
+                                </span>
+                            </button>
+                            <button onclick="location.href='https://prakash-bandapalli.github.io/dice-game/'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Live Demo
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="assets/simon.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Simon Game</h3>
+                        <p>Start by pressing any key, and a box will light up. Can you remember and repeat the sequence?
+                            Test your memory and reflexes with this classic game! 🧠🎮</p>
+                        <div class="icons">
+                            <button onclick="location.href='https://github.com/Prakash-Bandapalli/simon-game'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Github
+                                </span>
+                            </button>
+                            <button onclick="location.href='https://prakash-bandapalli.github.io/simon-game/'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Live Demo
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="assets/drum-kit.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Drum-kit Player</h3>
+                        <p>Click on the drums or press the keys shown to play beats and make your own music! 🥁🎶</p>
+                        <div class="icons">
+                            <button onclick="location.href='https://github.com/Prakash-Bandapalli/drum-kit'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Github
+                                </span>
+                            </button>
+                            <button onclick="location.href='https://prakash-bandapalli.github.io/drum-kit/'">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Live Demo
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <p>Comming soon ...</p>
+                </div>
+
+
+
+            </div>
+
+            <div id="load-more"> load more </div>
+
+        </div>
+    </div>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon mail-icon" />
+                <p><a href="mailto:prakash.bandapalli@gmail.com">prakash.bandapalli@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/prakash-bandapalli-2593b5259/">linkedin</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/insta-icon.png" alt="insta-icon icon" class="icon contact-icon" />
+                <p><a href="https://www.instagram.com/_prakash.bandapalli/">instagram</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; <span class="year"></span> Prakash Bandapalli. All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Tech enthusiast', 'Front-End Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
