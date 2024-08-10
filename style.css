@@ -7,7 +7,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(to right, #bff098, #6fd6ff);
+  /* background-image: linear-gradient(to right, #bff098, #6fd6ff); */
+  background-color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -94,10 +95,10 @@ header .myBtn {
   color: black;
   font-size: 20px;
   font-weight: 600;
+  transition: 0.6s;
   text-decoration: none;
   margin: 0 25px;
   padding: 0 10px;
-  transition: 0.6s;
 }
 .sticky {
   background-color: rgb(24, 24, 24, 0.8);
@@ -109,12 +110,24 @@ header .myBtn {
   }
   a:hover {
     color: #67d6ff;
+    transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
+    box-shadow: 0px 4px 6px #cfcbd4;
   }
 }
-a:hover {
-  color: #6fd6ff;
+/* a:hover {
+  color: brown;
   background: linear-gradient(to top right, #d4145a, #fbb03b);
   box-shadow: 25px 0 30px #e8095b, -25px 0 30px #f1a01e;
+} */
+
+a {
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -169,6 +182,7 @@ section {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   text-align: center;
+  font-weight: 500;
 }
 .title {
   font-size: 3rem;
@@ -306,7 +320,7 @@ section {
   font-size: 18px;
   color: black;
   font-weight: 500;
-  padding: 2em;
+  padding: 1em;
 }
 
 .container .box-container .box .content .btn {
@@ -482,6 +496,10 @@ button:focus:not(:focus-visible) {
 }
 .contact-info-container p {
   font-size: larger;
+  padding: 4px;
+}
+.contact-info-container a {
+  padding: 4px;
 }
 .contact-icon {
   cursor: default;
@@ -496,4 +514,49 @@ footer {
 }
 footer p {
   text-align: center;
+}
+
+#skills {
+  padding: 2rem;
+}
+
+.skill-container {
+  padding: 4rem;
+  background-color: #343038;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default for small screens */
+  gap: 1rem; /* Adjust as needed */
+  border-radius: 20px;
+}
+
+.skill-container span {
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Padding around the text */
+  border-radius: 12px; /* Rounded corners */
+  transition: 0.6s;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
+}
+
+.skill-container span:hover {
+  color: #67d6ff;
+  transform: translateY(-0.14rem); /* Moves the element up by 0.14rem */
+  box-shadow: 0px 4px 6px #cfcbd4;
+  background-color: #28242d; /* Optional: Change background on hover */
+}
+
+@media (min-width: 768px) {
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
 }
