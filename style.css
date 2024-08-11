@@ -563,6 +563,16 @@ footer p {
   }
 }
 
+.text-container {
+  padding: 1rem; /* Adjust as needed */
+}
+
+.text-container p {
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
 .quote {
-  margin-top: 1rem;
+  font-style: italic;
+  margin-top: 1rem; /* Add space above the quote */
+  margin-bottom: 1rem;
 }
