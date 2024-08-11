@@ -35,11 +35,18 @@
     top: 0;
     left: 0;
     margin: 25px;
+    color: white;
   }
   .menuHolder a {
     display: block;
     font-size: 30px;
     margin: 20px 0;
+    color: white;
+  }
+  .menuHolder a:hover {
+    color: #67d6ff;
+    transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
+    box-shadow: 0px 4px 6px #cfcbd4;
   }
   #experience,
   .experience-details-container {

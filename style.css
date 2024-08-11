@@ -8,7 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background-image: linear-gradient(to right, #bff098, #6fd6ff); */
-  background-color: white;
+  background-color: #e8e8e8;
 }
 html {
   scroll-behavior: smooth;
@@ -100,6 +100,7 @@ header .myBtn {
   margin: 0 25px;
   padding: 0 10px;
 }
+
 .sticky {
   background-color: rgb(24, 24, 24, 0.8);
   backdrop-filter: blur(6px);
@@ -521,6 +522,7 @@ footer p {
 }
 
 .skill-container {
+  margin-top: 2rem;
   padding: 4rem;
   background-color: #343038;
   color: white;
@@ -559,4 +561,8 @@ footer p {
   .skill-container {
     grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
   }
+}
+
+.quote {
+  margin-top: 1rem;
 }
