@@ -166,3 +166,37 @@
     padding: 0.5rem;
   }
 }
+
+/* Media Queries for Experience Section */
+@media screen and (max-width: 1200px) {
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-date {
+    margin-top: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience-card {
+    padding: 1rem;
+  }
+
+  .experience-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-details {
+    padding-left: 1rem;
+  }
+
+  .experience-details li {
+    font-size: 0.9rem;
+  }
+}
