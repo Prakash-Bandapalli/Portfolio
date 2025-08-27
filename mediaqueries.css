@@ -159,6 +159,10 @@
   .container .box-container .box .content .icons button {
     font-size: 12px;
   }
+  .container .box-container .box .content .icons .front {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -198,5 +202,11 @@
 
   .experience-details li {
     font-size: 0.9rem;
+  }
+
+  .container .box-container .box .content .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 }
