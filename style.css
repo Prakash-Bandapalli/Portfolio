@@ -327,6 +327,8 @@ section {
   color: black;
   font-weight: 500;
   padding: 1em;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .container .box-container .box .content .btn {
@@ -365,7 +367,7 @@ section {
   transition: 1s;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .box:hover .content {
   right: 0;
@@ -713,4 +715,9 @@ footer p {
 .certificate-btn:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
+}
+
+
+.single-button {
+  justify-content: center !important;
 }
