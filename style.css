@@ -1,6 +1,5 @@
 /* General */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,6 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-image: linear-gradient(to right, #bff098, #6fd6ff); */
   background-color: #e8e8e8;
-
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
@@ -105,37 +103,28 @@ header .myBtn {
   margin: 0 25px;
   padding: 0 10px;
 }
-
 .sticky {
   background-color: rgb(24, 24, 24, 0.8);
   backdrop-filter: blur(6px);
   padding: 10px;
   color: white;
-  .menuHolder a {
-    color: white;
-  }
-  a:hover {
-    color: #67d6ff;
-    transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
-    box-shadow: 0px 4px 6px #cfcbd4;
-  }
 }
-/* a:hover {
-  color: brown;
-  background: linear-gradient(to top right, #d4145a, #fbb03b);
-  box-shadow: 25px 0 30px #e8095b, -25px 0 30px #f1a01e;
-} */
-
-a {
-  transition: transform 0.1s, box-shadow 0.1s;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+.sticky .menuHolder a {
+  color: white;
 }
-
+.sticky a:hover {
+  color: #67d6ff;
+  transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
+  box-shadow: 0px 4px 6px #cfcbd4;
+}
 a:hover {
   transform: translateY(-0.14rem); /* This is equivalent to -0.5px */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+a {
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -211,7 +200,6 @@ section {
   justify-content: center;
   gap: 1rem;
 }
-
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -219,7 +207,6 @@ section {
   width: 8rem;
   border-radius: 2rem;
 }
-
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
@@ -228,7 +215,6 @@ section {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
 /* about section */
 #about {
   position: relative;
@@ -267,7 +253,6 @@ section {
   border-radius: 2rem;
   text-align: center;
 }
-
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -277,7 +262,6 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
 /* projects section */
 .container {
   max-width: 1200px;
@@ -285,13 +269,11 @@ section {
   text-align: center;
   padding: 25px 20px;
 }
-
 .container .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
-
 .container .box-container .box {
   background-color: #fff;
   padding: 20px;
@@ -300,28 +282,23 @@ section {
   border: 4px solid gray;
   display: none;
 }
-
 .container .box-container .box:nth-child(1),
 .container .box-container .box:nth-child(2),
 .container .box-container .box:nth-child(3) {
   display: inline-block;
 }
-
 .container .box-container .box .image {
   margin-bottom: 20px;
 }
-
 .container .box-container .box .image img {
   height: 100%;
   width: 100%;
 }
-
 .container .box-container .box .content h3 {
   font-size: 25px;
   color: black;
   font-weight: 700;
 }
-
 .container .box-container .box .content p {
   font-size: 18px;
   color: black;
@@ -330,7 +307,6 @@ section {
   flex-grow: 1;
   overflow-y: auto;
 }
-
 .container .box-container .box .content .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -338,7 +314,6 @@ section {
   color: #334;
   font-size: 16px;
 }
-
 .container .box-container .box .content .icons {
   display: flex;
   align-items: center;
@@ -347,7 +322,6 @@ section {
   padding-top: 15px;
   border-top: 1px solid #334;
 }
-
 .container .box-container .box .content .icons button {
   font-size: 14px;
 }
@@ -375,7 +349,6 @@ section {
 .icons {
   padding: 1rem;
 }
-
 .icons button {
   position: relative;
   border: none;
@@ -387,7 +360,6 @@ section {
   user-select: none;
   touch-action: manipulation;
 }
-
 .shadow {
   position: absolute;
   top: 0;
@@ -400,7 +372,6 @@ section {
   transform: translateY(2px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-
 .edge {
   position: absolute;
   top: 0;
@@ -416,7 +387,6 @@ section {
     hsl(340deg 100% 16%) 100%
   );
 }
-
 .front {
   display: block;
   position: relative;
@@ -429,31 +399,25 @@ section {
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-
 button:hover {
   filter: brightness(110%);
 }
-
 button:hover .front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
 button:active .front {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
-
 button:hover .shadow {
   transform: translateY(4px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
 button:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
 }
-
 button:focus:not(:focus-visible) {
   outline: none;
 }
@@ -471,13 +435,11 @@ button:focus:not(:focus-visible) {
   width: 8rem;
   border-radius: 2rem;
 }
-
 #load-more:hover {
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
 /* contacts */
 #contact {
   display: flex;
@@ -523,11 +485,9 @@ footer {
 footer p {
   text-align: center;
 }
-
 #skills {
   padding: 2rem;
 }
-
 .skill-container {
   margin-top: 2rem;
   padding: 4rem;
@@ -540,7 +500,6 @@ footer p {
   gap: 1rem; /* Adjust as needed */
   border-radius: 20px;
 }
-
 .skill-container span {
   display: inline-block;
   padding: 0.5rem 1rem; /* Padding around the text */
@@ -550,52 +509,43 @@ footer p {
   width: auto;
   cursor: pointer;
 }
-
 .skill-container span:hover {
   color: #67d6ff;
   transform: translateY(-0.14rem); /* Moves the element up by 0.14rem */
   box-shadow: 0px 4px 6px #cfcbd4;
   background-color: #28242d; /* Optional: Change background on hover */
 }
-
 @media (min-width: 768px) {
   .skill-container {
     grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
   }
 }
-
 @media (min-width: 1024px) {
   .skill-container {
     grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
   }
 }
-
 .text-container {
   padding: 1rem; /* Adjust as needed */
 }
-
 .text-container p {
   line-height: 1.5; /* Adjust line height for better readability */
 }
-
 .quote {
   font-style: italic;
   margin-top: 1rem; /* Add space above the quote */
   margin-bottom: 1rem;
 }
-
 /* Experience Section Styles */
 #experience {
   padding: 2rem 5%;
 }
-
 .experience-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .experience-card {
   background-color: white;
   border-radius: 10px;
@@ -603,48 +553,40 @@ footer p {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .experience-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 .experience-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
 }
-
 .experience-header h3 {
   font-size: 1.5rem;
   color: #333;
   margin: 0;
 }
-
 .experience-date {
   font-size: 0.9rem;
   color: #666;
   font-weight: 500;
 }
-
 .experience-company {
   font-size: 1.1rem;
   color: #555;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 .experience-details {
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
 .experience-details li {
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
-
 .certificate-btn {
   position: relative;
   border: none;
@@ -656,7 +598,6 @@ footer p {
   user-select: none;
   touch-action: manipulation;
 }
-
 .certificate-btn .shadow {
   position: absolute;
   top: 0;
@@ -669,7 +610,6 @@ footer p {
   transform: translateY(2px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-
 .certificate-btn .edge {
   position: absolute;
   top: 0;
@@ -679,7 +619,6 @@ footer p {
   border-radius: 8px;
   background: linear-gradient(to left, #555 0%, #444 8%, #444 92%, #555 100%);
 }
-
 .certificate-btn .front {
   display: block;
   position: relative;
@@ -692,31 +631,25 @@ footer p {
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
-
 .certificate-btn:hover {
   filter: brightness(110%);
 }
-
 .certificate-btn:hover .front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
 .certificate-btn:active .front {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
-
 .certificate-btn:hover .shadow {
   transform: translateY(4px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
 .certificate-btn:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
 }
-
 
 .single-button {
   justify-content: center !important;
