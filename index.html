@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
         <div class="myBtn"> <i class="fas fa-bars menu-btn"></i></div>
     </header>
 
-    <section id="profile">
+    <section id="profile" class="reveal-section">
         <div class="section__pic-container">
             <img src="./assets/my-pic.jpg" alt="Profile pic">
         </div>
@@ -44,7 +47,8 @@
             </div>
         </div>
     </section>
-    <section id="about">
+
+    <section id="about" class="reveal-section">
         <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About ME</h1>
         <div class="section-container">
@@ -74,7 +78,6 @@
                         code somehow works better than my time management skills.
                         Based in Hyderabad. Professional overthinker.
 
-
                     <p class="quote">
                         "Hyderabad-based developer who debugs code faster than life decisions"
                     </p>
@@ -85,10 +88,9 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
 
-    <section id="experience">
+    <section id="experience" class="reveal-section">
         <p class="section__text__p1">Check Out My</p>
         <h1 class="title">Experience</h1>
-
         <div class="experience-container">
             <!-- Software Engineer Intern -->
             <div class="experience-card">
@@ -120,7 +122,6 @@
                     <span class="front text">View Certificate</span>
                 </button>
             </div>
-
             <!-- DSA Mentor -->
             <div class="experience-card">
                 <div class="experience-header">
@@ -140,7 +141,6 @@
                     <span class="front text">View Certificate</span>
                 </button>
             </div>
-
             <!-- GirlScript Summer of Code -->
             <div class="experience-card">
                 <div class="experience-header">
@@ -163,19 +163,11 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal-section">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="container">
             <div class="box-container">
-
-
-
-
-
-
-
-
                 <div class="box">
                     <div class="image">
                         <img src="assets/ScriptFlow.png" alt="">
@@ -194,11 +186,9 @@
                                 <span class="front text"> Github
                                 </span>
                             </button>
-
                         </div>
                     </div>
                 </div>
-
 
                 <div class="box">
                     <div class="image">
@@ -228,7 +218,6 @@
                     </div>
                 </div>
 
-
                 <div class="box">
                     <div class="image">
                         <img src="./assets/PdfQuery.png" alt="">
@@ -256,7 +245,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="box">
                     <div class="image">
                         <img src="./assets/Map.jpg" alt="">
@@ -284,8 +272,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="box">
                     <div class="image">
                         <img src="assets/movie.jpg" alt="">
@@ -312,7 +298,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="box">
                     <div class="image">
                         <img src="./assets/quiz.jpg" alt="">
@@ -338,7 +323,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="box">
                     <div class="image">
                         <img src="assets/eatnsplit.jpg" alt="">
@@ -364,7 +348,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="box">
                     <div class="image">
                         <img src="./assets/bored.jpg" alt="">
@@ -390,7 +373,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="box">
                     <div class="image">
                         <img src="assets/simon.png" alt="">
@@ -422,7 +404,7 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
     </section>
 
-    <section id="skills">
+    <section id="skills" class="reveal-section">
         <p class="section__text__p1">Explore</p>
         <h1 class="title">My Skills</h1>
         <div class="skill-container">
@@ -441,7 +423,7 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
-    <section id="contact">
+    <section id="contact" class="reveal-section">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -463,13 +445,191 @@
     <footer>
         <p>Copyright &#169; <span class="year"></span> Prakash Bandapalli. All Rights Reserved</p>
     </footer>
+
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="index.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+        // Typed.js initialization
         var typed = new Typed('#element', {
             strings: ['Tech enthusiast', 'Problem Solver', 'Continuous Explorer', 'Full-Stack Developer'],
             typeSpeed: 50,
+        });
+
+        // GSAP Animations
+        document.addEventListener('DOMContentLoaded', function () {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Set initial state for sections
+            gsap.set('.reveal-section', {
+                opacity: 0,
+                y: 50
+            });
+
+            // Create reveal animations for each section
+            gsap.utils.toArray('.reveal-section').forEach((section, i) => {
+                gsap.to(section, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 80%", // When top of section hits 80% of viewport
+                        end: "bottom 20%",
+                        toggleActions: "play none none none",
+                        // Optional: Add markers for debugging (remove in production)
+                        // markers: true
+                    }
+                });
+            });
+
+            // Special animation for profile section
+            gsap.to('#profile .section__pic-container', {
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                delay: 0.3,
+                ease: "back.out(1.7)"
+            });
+
+            gsap.to('#profile .section__text', {
+                opacity: 1,
+                x: 0,
+                duration: 1.2,
+                delay: 0.5,
+                ease: "power2.out"
+            });
+
+            // Animate social icons
+            gsap.to('#socials-container .icon', {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                delay: 0.8,
+                ease: "back.out(1.2)"
+            });
+
+            // Animate buttons
+            gsap.to('.button-container .btn', {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                delay: 1,
+                ease: "power2.out"
+            });
+
+            // Set initial states for profile section elements
+            gsap.set('#profile .section__pic-container', {
+                opacity: 0,
+                scale: 0.8
+            });
+
+            gsap.set('#profile .section__text', {
+                opacity: 0,
+                x: -30
+            });
+
+            gsap.set('#socials-container .icon', {
+                opacity: 0,
+                y: 20
+            });
+
+            gsap.set('.button-container .btn', {
+                opacity: 0,
+                y: 20
+            });
+
+            // Animate experience cards
+            gsap.utils.toArray('.experience-card').forEach((card, i) => {
+                gsap.set(card, {
+                    opacity: 0,
+                    y: 30
+                });
+
+                gsap.to(card, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    delay: 0.2 * i,
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    ease: "power2.out"
+                });
+            });
+
+            // Animate project boxes with stagger effect
+            gsap.utils.toArray('.box').forEach((box, i) => {
+                gsap.set(box, {
+                    opacity: 0,
+                    scale: 0.9,
+                    y: 30
+                });
+
+                gsap.to(box, {
+                    opacity: 1,
+                    scale: 1,
+                    y: 0,
+                    duration: 0.6,
+                    delay: 0.1 * i,
+                    scrollTrigger: {
+                        trigger: box,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    ease: "back.out(1.2)"
+                });
+            });
+
+            // Animate skill tags
+            gsap.utils.toArray('.skill-container span').forEach((skill, i) => {
+                gsap.set(skill, {
+                    opacity: 0,
+                    scale: 0.8,
+                    rotation: 5
+                });
+
+                gsap.to(skill, {
+                    opacity: 1,
+                    scale: 1,
+                    rotation: 0,
+                    duration: 0.5,
+                    delay: 0.05 * i,
+                    scrollTrigger: {
+                        trigger: skill,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    ease: "back.out(1.5)"
+                });
+            });
+
+            // Animate contact info containers
+            gsap.utils.toArray('.contact-info-container').forEach((container, i) => {
+                gsap.set(container, {
+                    opacity: 0,
+                    y: 20
+                });
+
+                gsap.to(container, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.6,
+                    delay: 0.2 * i,
+                    scrollTrigger: {
+                        trigger: container,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    ease: "power2.out"
+                });
+            });
         });
     </script>
 </body>
